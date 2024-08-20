@@ -1,0 +1,72 @@
+:root {
+    --primo-red: 190, 0, 30;
+    --primo-red-contrast: 238, 238, 255;
+    --primo-red-accent: 230, 90, 90;
+    --primo-grey: 56, 56, 56;
+}
+
+.dark-mode {
+    --primo-red: 190, 0, 30;
+    --primo-red-contrast: 238, 238, 255;
+    --primo-red-accent: 230, 90, 90;
+    --primo-grey: 56, 56, 56;
+}
+
+*:not(.fa-thin):not(.fa-solid):not(.fa) {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+}
+
+.home-page .form-tab-content .form-tab-pane>form {
+    border-radius: 0;
+    height: auto !important;
+    padding: 0 10px 0 0;
+    box-shadow: 0 0 15px 1px rgba(var(--primo-red), .3);
+}
+
+.home-page .form-tab-content .form-tab-pane>form .form-submit>button {
+    border-radius: 0 !important;
+}
+
+.theme-btn {
+    background-color: rgb(var(--primo-red)) !important;
+    color: rgb(var(--primo-red-contrast)) !important;
+}
+
+.theme-btn:hover {
+    background-color: rgb(var(--primo-red-accent)) !important;
+}
+
+.boxcar-banner-section-v1 .banner-content .form-tab-content>span {
+    background-color: rgba(var(--primo-red-accent), .5);
+    color: rgb(var(--primo-red-contrast));
+}
+
+.boxcar-banner-section-v1 .banner-content .form-tab-content .model-links li a {
+    border-radius: 0;
+    background-color: rgba(var(--primo-red-accent), .3);
+    color: rgb(var(--primo-red-contrast));
+    text-shadow: 0 0 3px black;
+}
+
+.boxcar-banner-section-v1 .banner-content .form-tab-content .model-links li a:hover {
+    border-radius: 0;
+    background-color: rgba(var(--primo-red-accent), .5);
+}
+
+.boxcar-banner-section-v1 .banner-content .form-tab-content .model-links li a i {
+    color: rgb(var(--primo-red-contrast));
+}
+
+.main-menu {
+    background-color: rgba(var(--primo-red-accent), .5);
+}
+
+.main-menu .navigation>li>span a,
+.main-menu .navigation>li>span {
+    color: rgba(var(--primo-red-contrast)) !important;
+}
+
+.layout-search .search-box input::placeholder {
+    color: rgb(var(--primo-red-contrast));
+    text-shadow: 0 0 10px rgb(var(--primo-red-accent));
+}

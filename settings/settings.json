@@ -1,0 +1,111 @@
+{
+    "site": {
+        "name": "Primo Executive",
+        "template": "templates\/client\/",
+        "salt": "assesment",
+        "version": "v0.1.0.1"
+    },
+    "admin": {
+        "name": "Primo Executive Admin",
+        "template": "templates\/admin\/",
+        "salt": "assesment",
+        "version": "v0.1.0.1"
+    },
+    "documentation": {
+        "name": "Primo Executive Documentation",
+        "template": "templates\/documentation\/",
+        "salt": "assesment",
+        "version": "v0.1.0.1"
+    },
+    "jsonwebtoken": {
+        "secret": "",
+        "refresh_secret": ""
+    },
+    "debugAuthorizedIPs": [
+        "127.0.0.1",
+        "::1"
+    ],
+    "configuration": {
+        "upload": {
+            "size": 3,
+            "maxquantity": 20
+        },
+        "onlieUsers": {
+            "timeOut": "+10 Minute"
+        },
+        "timeZone": {
+            "timeZone": "Africa/Johannesburg"
+        },
+        "session": {
+            "timeOut": "+1 Hour",
+            "exceptions": [
+                1
+            ]
+        }
+    },
+    "languages": [
+        {
+            "name": "English",
+            "active": true,
+            "direction": "ltr",
+            "flag": "\/upload\/flags\/16\/England.png",
+            "short": "en"
+        }
+    ],
+    "google": {
+        "maps": {
+            "active": false,
+            "key": ""
+        },
+        "reCaptchaV3": {
+            "active": false,
+            "siteKey": "",
+            "secretKey": "N/A"
+        },
+        "reCaptchaV2": {
+            "active": false,
+            "siteKey": "",
+            "secretKey": "N/A"
+        }
+    },
+    "cache": {
+        "admin-SQL": {
+            "expire": "+6 Hour",
+            "checkNew": false,
+            "checkNewPeriod": "+10 Second"
+        },
+        "site-menu": {
+            "expire": "+6 Hour",
+            "checkNew": false,
+            "checkNewPeriod": "+10 Second"
+        },
+        "admin-ftp-list": {
+            "expire": "+0 Hour",
+            "checkNew": false,
+            "checkNewPeriod": "+10 Second"
+        }
+    },
+    "CronReporterMailer": {
+        "Host": "mail.myautocare.co.za",
+        "Port": 587,
+        "SMTPAuth": true,
+        "SMTPOptions": {
+            "ssl": {
+                "verify_peer": false,
+                "verify_peer_name": false,
+                "allow_self_signed": true
+            }
+        },
+        "SMTPSecure": "tls",
+        "Username": "primo_cron_reporter@myautocare.co.za",
+        "Password": "assesment",
+        "setFrom": {
+            "from_name": "Primo Executive - Cron Reporter",
+            "from_address": "primo_cron_reporter@myautocare.co.za"
+        },
+        "addAddress": {
+            "admin@primoexecutive.co.za": "Primo Executive - Admin",
+            "ferhatyasar@gmail.com": "Ferhat Yasar - Lead Dev"
+        }
+    }
+}

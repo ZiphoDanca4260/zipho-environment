@@ -1,0 +1,381 @@
+/* --- DEFAULT CSS FILE  ---------------------------------------------------------------------------
+This file contains the style sheet that is used across all pages of the project. */
+* {
+    margin: 0;
+    padding: 0;
+    transition: color 500ms ease, background-color 500ms ease;
+}
+
+html,
+body,
+.modal-body {
+    scroll-behavior: smooth !important;
+}
+
+body {
+    position: relative;
+}
+
+.page-loader-wrapper {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 100dvh;
+    background-color: rgb(21, 3, 3);
+    text-align: center;
+}
+
+.page-loader {
+    width: 200px;
+    position: absolute;
+    z-index: 110;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    overflow: visible;
+}
+
+/* BUTTONS */
+
+.theme-btn:disabled {
+    position: relative;
+}
+
+.theme-btn:disabled:hover {
+    background-color: currentColor;
+}
+
+.theme-btn:disabled::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: inherit;
+}
+
+.button-loading {
+    position: relative;
+}
+
+.button-loading::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: 4px solid transparent;
+    border-top-color: #ffffff;
+    border-radius: 50%;
+    animation: button-loading-spinner 1s ease infinite;
+}
+
+@keyframes button-loading-spinner {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+.pagination .page-item-active a {
+    background-color: var(--theme-color-dark) !important;
+    color: var(--theme-color-light) !important;
+    cursor: default !important;
+}
+
+.pagination .page-item-active a:hover {
+    background-color: currentColor;
+    color: currentColor;
+    cursor: default;
+}
+
+[data-fr-section="pagination_ellipsis"] * {
+    cursor: pointer !important;
+}
+
+/* FORMS */
+
+.form-control:focus {
+    color: currentColor;
+    background-color: var(--theme-color-light);
+}
+
+select.form-control {
+    background-color: var(--theme-color-light);
+}
+
+/* CUSTOM SCROLLBAR */
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+*::-webkit-scrollbar {
+    width: var(--scrollbar-width);
+    height: var(--scrollbar-width);
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+}
+
+*::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: var(--scrollbar-width);
+    border: calc(var(--scrollbar-width) / 4) solid var(--theme-color-light);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-thumb-hover);
+}
+
+/* CUSTOM DIVIDER */
+
+.custom-divider {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    width: 100%;
+    position: relative;
+}
+
+.custom-divider .mask {
+    overflow: hidden;
+    height: 20px;
+}
+
+.custom-divider .mask:after {
+    content: "";
+    display: block;
+    margin: -25px auto 0;
+    width: 100%;
+    height: 25px;
+    border-radius: 125px/12px;
+    box-shadow: 0 0 8px var(--theme-color-dark);
+}
+
+.custom-divider-inverted .mask::after {
+    box-shadow: 0 0 8px var(--theme-color-light) !important;
+}
+
+.custom-divider span {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    bottom: 100%;
+    margin-bottom: -37px;
+    left: 50%;
+    margin-left: -37px;
+    border-radius: 100%;
+    box-shadow: 0 1px 6px var(--theme-color-dark);
+    background: var(--theme-color-light);
+}
+
+.custom-divider-inverted span {
+    box-shadow: 0 1px 6px var(--theme-color-light) !important;
+    background: var(--theme-color-dark) !important;
+}
+
+.custom-divider span i {
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    border-radius: 100%;
+    border: 1px dashed var(--theme-color-dark-alpha);
+    text-align: center;
+    font-style: normal;
+    color: var(--text-color2);
+}
+
+.custom-divider-inverted span i {
+    border: 1px dashed var(--theme-color-light-alpha) !important;
+    color: var(--text-color2) !important;
+}
+
+.custom-divider span i img {
+    padding: 4px;
+}
+
+/* AFFILIATED BANKS CAROUSEL */
+
+.affiliated-banks .slick-list {
+    overflow: visible;
+}
+
+.affiliated-banks .slick-dots li button::before {
+    font-size: 18px;
+    color: var(--theme-color-dark);
+}
+
+.affiliated-banks .slick-prev {
+    position: absolute;
+    top: auto;
+    left: 10%;
+    bottom: -50px;
+    z-index: 10;
+}
+
+.affiliated-banks .slick-next {
+    position: absolute;
+    top: auto;
+    right: 10%;
+    bottom: -50px;
+    z-index: 10;
+}
+
+.affiliated-bank {
+    max-width: 150px;
+}
+
+.affiliated-bank .ambient-light {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+}
+
+.affiliated-bank:hover .ambient-light {
+    opacity: .8;
+    transform: scale(1.05);
+    filter: blur(10px);
+}
+
+/* FANCYBOX FIX */
+.fancybox__slide.has-image>.fancybox__content {
+    width: 70dvw !important;
+    height: 70dvh !important;
+    object-fit: contain;
+}
+
+
+/* FINANCE GRID LAYOUT */
+
+.finance-grid-container {
+    display: grid;
+    grid-template-columns: repeat(9 1fr);
+    gap: 1rem;
+    grid-template-areas:
+        'one one two three three four five five six seven seven eight nine nine'
+        'ten ten eleven twelve twelve thirteen fourteen fourteen fifteen sixteen sixteen seventeen eighteen eighteen';
+}
+
+@media only screen and (max-width: 640px) {
+    .finance-grid-container {
+        grid-template-columns: repeat(1fr 50px 1fr);
+        grid-template-areas:
+            'one ten ten'
+            'three two twelve'
+            'five four fourteen'
+            'seven six sixteen'
+            'nine eight eighteen';
+    }
+
+    .finance-grid-11,
+    .finance-grid-13,
+    .finance-grid-15,
+    .finance-grid-17 {
+        display: none;
+    }
+
+    .finance-grid-container>div {
+        border-bottom: solid 1px var(--theme-color3);
+        font-size: .75rem;
+    }
+}
+
+.finance-grid-1 {
+    grid-area: one;
+}
+
+.finance-grid-2 {
+    grid-area: two;
+}
+
+.finance-grid-3 {
+    grid-area: three;
+}
+
+.finance-grid-4 {
+    grid-area: four;
+}
+
+.finance-grid-5 {
+    grid-area: five;
+}
+
+.finance-grid-6 {
+    grid-area: six;
+}
+
+.finance-grid-7 {
+    grid-area: seven;
+}
+
+.finance-grid-8 {
+    grid-area: eight;
+}
+
+.finance-grid-9 {
+    grid-area: nine;
+}
+
+.finance-grid-10 {
+    grid-area: ten;
+}
+
+.finance-grid-11 {
+    grid-area: eleven;
+}
+
+.finance-grid-12 {
+    grid-area: twelve;
+}
+
+.finance-grid-13 {
+    grid-area: thirteen;
+}
+
+.finance-grid-14 {
+    grid-area: fourteen;
+}
+
+.finance-grid-15 {
+    grid-area: fifteen;
+}
+
+.finance-grid-16 {
+    grid-area: sixteen;
+}
+
+.finance-grid-17 {
+    grid-area: seventeen;
+}
+
+.finance-grid-18 {
+    grid-area: eighteen;
+}
+
+/* IMAGES */
+
+
+.aspect-four-to-three {
+    aspect-ratio: 4/3 !important;
+}

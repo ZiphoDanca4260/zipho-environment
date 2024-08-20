@@ -1,0 +1,180 @@
+{
+    "header": [
+        {
+            "file": "/assets_global/plugins/bootstrap/v5.3.3/bootstrap.min.css",
+            "merge": true,
+            "type": "css",
+            "active": true
+        },
+        {
+            "file": "/assets_global/plugins/sweetalert2/v11.12.0/sweetalert2.min.css",
+            "merge": true,
+            "type": "css",
+            "active": true
+        },
+        {
+            "file": "/assets_global/plugins/toastr/v2.1.3/toastr.min.css",
+            "merge": true,
+            "type": "css",
+            "active": true
+        },
+        {
+            "file": "/assets_global/icons/fontawesome-pro/v6.5.2/css/all.min.css",
+            "merge": true,
+            "type": "css",
+            "active": true
+        },
+        {
+            "file": "/assets_global/plugins/slick-slider/v@custom/slick-slider.css",
+            "merge": true,
+            "type": "css",
+            "active": true
+        },
+        {
+            "file": "/assets_global/plugins/mmenu/v@custom/mmenu.css",
+            "merge": true,
+            "type": "css",
+            "active": true
+        },
+        {
+            "file": "/assets/default/css/template.css",
+            "merge": true,
+            "type": "css",
+            "active": true
+        },
+        {
+            "file": "/assets_global/plugins/select2/v1.3.1/css/select2.min.css",
+            "merge": true,
+            "type": "css",
+            "active": true
+        },
+        {
+            "file": "/assets/default/css/core.css",
+            "merge": true,
+            "type": "css",
+            "active": true
+        }
+    ],
+    "footer": [
+        {
+            "file": "/assets_global/plugins/jquery/v3.7.1/jquery.min.js",
+            "merge": true,
+            "type": "js",
+            "active": true
+        },
+        {
+            "file": "/assets_global/plugins/bootstrap/v5.3.3/bootstrap.bundle.min.js",
+            "merge": true,
+            "type": "js",
+            "active": true
+        },
+        {
+            "file": "/assets_global/plugins/toastr/v2.1.3/toastr.min.js",
+            "merge": true,
+            "type": "js",
+            "active": true
+        },
+        {
+            "file": "/assets_global/plugins/sweetalert2/v11.12.0/sweetalert2.all.min.js",
+            "merge": true,
+            "type": "js",
+            "active": true
+        },
+        {
+            "file": "/assets_global/plugins/slick-slider/v@custom/slick.min.js",
+            "merge": true,
+            "type": "js",
+            "active": true
+        },
+        {
+            "file": "/assets_global/plugins/slick-slider/v@custom/slick-animation.min.js",
+            "merge": true,
+            "type": "js",
+            "active": true
+        },
+        {
+            "file": "/assets_global/plugins/jquery-fancybox/v3.2.10/jquery-fancybox.js",
+            "merge": true,
+            "type": "js",
+            "active": true
+        },
+        {
+            "file": "/assets_global/plugins/wow/v1.0.1/wow.js",
+            "merge": true,
+            "type": "js",
+            "active": true
+        },
+        {
+            "file": "/assets_global/plugins/appear/v@custom/appear.js",
+            "merge": true,
+            "type": "js",
+            "active": true
+        },
+        {
+            "file": "/assets_global/plugins/mixitup/v2.1.10/mixitup.js",
+            "merge": true,
+            "type": "js",
+            "active": true
+        },
+        {
+            "file": "/assets_global/plugins/knob/v1.2.11/knob.js",
+            "merge": true,
+            "type": "js",
+            "active": true
+        },
+        {
+            "file": "/assets_global/plugins/mmenu/v@custom/mmenu.js",
+            "merge": true,
+            "type": "js",
+            "active": true
+        },
+        {
+            "file": "/assets_global/plugins/range-slider/v@custom/range-slider.js",
+            "merge": true,
+            "type": "js",
+            "active": true
+        },
+        {
+            "file": "/assets_global/plugins/select2/v1.3.1/js/select2.min.js",
+            "merge": true,
+            "type": "js",
+            "active": true
+        },
+        {
+            "file": "/assets_global/plugins/minisearch/v7.0.2/minisearch.min.js",
+            "merge": true,
+            "type": "js",
+            "active": true
+        },
+        {
+            "file": "/assets/default/js/core.js",
+            "merge": true,
+            "type": "js",
+            "active": true
+        },
+        {
+            "file": "/assets/default/js/template.js",
+            "merge": true,
+            "type": "js",
+            "active": true
+        },
+        {
+            "file": "/assets/default/js/controllers/vehicles.js",
+            "merge": true,
+            "type": "js",
+            "active": true
+        },
+        {
+            "file": "/assets/client/js/client.js",
+            "merge": true,
+            "type": "js",
+            "active": true
+        },
+        {
+            "file": "/assets/client/js/pages/we-buy-cars.js",
+            "merge": true,
+            "type": "js",
+            "active": true
+        }
+    ]
+}
