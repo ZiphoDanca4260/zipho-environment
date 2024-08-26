@@ -275,6 +275,17 @@ CREATE TABLE IF NOT EXISTS `usr_user_group` (
 
 -- Dumping data for table assessment_primoexecutive_co_za.usr_user_group: ~0 rows (approximately)
 
+-- Dumping structure for table assessment_primoexecutive_co_za.usr_blog_posts
+CREATE TABLE IF NOT EXISTS `usr_blog_posts` (
+  `usr_blog_posts_id` int NOT NULL AUTO_INCREMENT,
+  `usr_blog_posts_image` LONGTEXT,
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`usr_blog_posts_id`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf16 COMMENT='usr_ as User : This table collects user''s blog posts for project';
+
+-- Dumping data for table assessment_primoexecutive_co_za.usr_blog_posts: ~0 rows (approximately)
+
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
