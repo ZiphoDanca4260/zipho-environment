@@ -1,4 +1,11 @@
 $(function () {
+    files.onchange = evt => {
+      const [file] = files.files
+      if (file) {
+        preview.src = URL.createObjectURL(file)
+      }
+    };
+
     const convertBase64 = (file) => {
         return new Promise((resolve, reject) => {
             const fileReader = new FileReader();
@@ -37,5 +44,5 @@ $(function () {
 
                 ajaxPost(json);
             });
-    })
+    });
 })

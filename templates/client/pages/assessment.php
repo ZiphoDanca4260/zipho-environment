@@ -2,7 +2,7 @@
     .box {
         background-color: white;
         outline: 2px dashed black;
-        height: 200px;
+        height: 500px;
         width: 800px;
     }
     .box {
@@ -34,7 +34,8 @@
                     <span>or drag them here.</span>
                     <input class="box__file" type="file" id="files" accept="image/png, image/gif, image/jpeg" data-fr-name0="files" name="files[]" multiple />
                 </label>
-                <div class="file-list"></div>
+                <br/>
+                <img id="preview" src="#" alt="Preview" width="150px"/>
             </div>
             <button type="button" class="btn btn-success mt-4" data-fr-action="submit">Submit</button>
         </div>
