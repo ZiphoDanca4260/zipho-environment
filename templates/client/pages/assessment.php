@@ -1,3 +1,18 @@
+<style>
+    .box {
+        background-color: white;
+        outline: 2px dashed black;
+        height: 200px;
+        width: 800px;
+    }
+    .box {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+
 <!-- BANNER SECTION -->
 <section class="boxcar-banner-section-v1 alt" style="min-height: 300px;">
     <div class="container">
@@ -12,6 +27,18 @@
 <!-- ASSESSMENT -->
 <section class="layout-section" style="min-height: 100dvh;">
     <div class="d-flex flex-column align-items-center p-3">
+        <div data-fr-section="image-form" enctype="multipart/form-data">
+            <div class="box">
+                <label>
+                    <strong>Choose files</strong>
+                    <span>or drag them here.</span>
+                    <input class="box__file" type="file" id="files" data-fr-name0="files" name="files[]" multiple />
+                </label>
+                <div class="file-list"></div>
+            </div>
+            <button type="button" class="btn btn-success mt-4" data-fr-action="submit">Submit</button>
+        </div>
+
         <h1>JS</h1>
         <h3>Here will be a text editor for the admin to create blog posts.</h3>
         <p>The admin should be able to use simple markup and also they should be able to add multiple pictures (average 15)</p>
