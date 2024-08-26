@@ -32,7 +32,7 @@
                 <label>
                     <strong>Choose files</strong>
                     <span>or drag them here.</span>
-                    <input class="box__file" type="file" id="files" data-fr-name0="files" name="files[]" multiple />
+                    <input class="box__file" type="file" id="files" accept="image/png, image/gif, image/jpeg" data-fr-name0="files" name="files[]" multiple />
                 </label>
                 <div class="file-list"></div>
             </div>
