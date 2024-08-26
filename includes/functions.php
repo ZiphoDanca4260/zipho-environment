@@ -169,9 +169,9 @@ function xPOST($variableName, $dataType = "", $maxLength = 50)
 }
 
 /**
- * Validates and sanitizes the provided string based on the specified type and maximum length. 
+ * Validates and sanitizes the provided string based on the specified type and maximum length.
  * It throws a custom error response if the validation fails.
- * 
+ *
  * @param mixed $str The input string to validate and sanitize.
  * @param string $variableName The name of the variable being sanitized (used in error messages).
  * @param string $dataType The expected data type of the input ('string', 'integer').
@@ -200,7 +200,7 @@ function secure($str, $variableName, $dataType = "string", $maxLength = 50)
 
 /**
  * Recursively creates the directory path specified if it does not already exist.
- * 
+ *
  * @param string $path The directory path to be created.
  * @return void
  */
@@ -255,7 +255,7 @@ function read_cache_file($cache_file, $timeout = "0 seconds")
  * Handles SQL error logging and response. Generates a detailed error log file, and optionally
  * displays a custom error message depending on the caller's IP address.
  *
- * @param array $options Configuration options for error handling behavior. 
+ * @param array $options Configuration options for error handling behavior.
  *                       Includes 'error_show' to control error display.
  */
 function SQL_error($options = ['error_show' => true])
@@ -315,7 +315,7 @@ function SQL_error($options = ['error_show' => true])
 
 /**
  * if user ips are developer user then return true
- * 
+ *
  * @return bool
  */
 function isDevopUser()
@@ -535,7 +535,7 @@ function SQL_ready($str)
 /**
  * **Warning: Deprecated and Unsafe**
  * Converts arrays or objects to a JSON string and escapes characters for SQL insertion.
- * 
+ *
  * Warning: This method is not a substitute for prepared statements or proper validation and
  * escaping mechanisms provided by database access libraries.
  *
@@ -670,7 +670,7 @@ function renderPage($item)
 }
 
 /**
- * Renders the assets for a given item by including the specified file 
+ * Renders the assets for a given item by including the specified file
  * from an 'assets' directory within the item's path.
  *
  * The function expects an array specifying the path and file to be rendered.
@@ -799,7 +799,7 @@ function renderView($item)
 function clear_cache($obj = array())
 {
 	$temp = "temp";
-	$domain = $_SERVER['REQUEST_SCHEME'] . "://" . $_SERVER['HTTP_HOST'];
+	$domain = $_SERVER['SERVER_PORT'] . "://" . $_SERVER['HTTP_HOST'];
 	$query = $_GET['query'] ?? '';
 
 	// Default values
@@ -959,9 +959,9 @@ function get_web_page($url, $curl_opts = false)
 
 /**
  * Creates a random string of lowercase alphanumeric chars.
- * 
+ *
  * @param int $length The length of the generated random string
- * 
+ *
  * @return string the generated string
  */
 function randomStr($length = 10)
@@ -1142,7 +1142,7 @@ function load_template($fileslug = "ORDER", $file = false)
 
 /**
  * Validates if specified fields in a data array exist and meet defined criteria. Supports deep checks with path-like syntax, type validation, truthiness checks, and "either-or" logic for multiple fields.
- * 
+ *
  * The function allows specifying required fields with additional constraints:
  * - Path-like syntax for nested data checking (e.g., 'user/details/name').
  * - Type specification with optional length constraint (e.g., '(str@50)name' for a string up to 50 characters).
@@ -1157,15 +1157,15 @@ function load_template($fileslug = "ORDER", $file = false)
  *
  * @param array $requiredFields An array of strings representing the fields to check, with optional type, length, and truthiness specifications. Nested arrays implement "either-or" logic.
  * @param array $data The associative array of data to validate against the specified fields and constraints.
- * 
+ *
  * @return void The function directly outputs a JSON-encoded error message and halts execution if validation fails. No return value on successful validation.
- * 
+ *
  * ---
- * 
+ *
  * #Usage:
  * Here is how you can use the checkRequiredFields function:
- * 
- * 
+ *
+ *
  * ```php
  * checkRequiredFields(
  *     [
@@ -1179,7 +1179,7 @@ function load_template($fileslug = "ORDER", $file = false)
  *     $data
  * );
  * ```
- * 
+ *
  */
 function checkRequiredFields($data, $requiredFields = array(), $debug = false)
 {
@@ -1281,7 +1281,7 @@ function validateField($value, $type, $length)
 
 /**
  * Check if a string contains a given substring.
- * 
+ *
  * @param string $haystack The string to search in.
  * @param string $needle The substring to search for.
  * @return bool Returns true if the needle exists in the haystack, false otherwise.
